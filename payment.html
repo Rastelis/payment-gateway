@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Payment Gateway</h1>
+        <form>
+            <div>
+                <label for="card-holder">Card holder:</label>
+                <div class="input-field" id="card-holder"><i class="bi bi-person-fill"></i><input placeholder="John Smith" type="text"></div>
+            </div>
+            <div>
+                <label for="card-number">Card card-number:</label>
+                <div class="input-field" id="card-number"><i class="bi bi-credit-card"></i><input placeholder="Card Number" type="number"></div>
+            </div>
+            <div class="input-group-container">
+                <div class="input-group">
+                    <label for="expirity-date">Expirity date:</label>
+                    <div class="input-field" id="expirity-date"><i class="bi bi-calendar3"></i><input placeholder="mm" type="text">/<input placeholder="yy" type="text"></div>
+                </div>
+                <div class="input-group">
+                    <label for="cvc">CVC:</label>
+                    <div class="input-field" id="cvc"><i class="bi bi-lock-fill"></i><input placeholder="123" type="number"></div>
+                </div>
+            </div>
+        </form>
+        <button>Pay</button>
+    </div>
 </body>
+
 </html>
